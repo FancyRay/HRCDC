@@ -12,7 +12,7 @@ This repository contains the reference code for the manuscript ``Dual Consistenc
 running environment
 
 * Python 3.9
-* torch 1.31.1
+* torch 1.13.1
 * dgl 1.1.2
 
 ## Training
