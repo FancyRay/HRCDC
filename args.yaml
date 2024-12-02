@@ -1,0 +1,81 @@
+acm:
+  weight_decay: 0.0001
+  device: 0
+  hidden_dim: 64
+  num_heads: 4
+  epoch: 200
+  num_layers: 4
+  lr: 0.01
+  use_norm: True
+  use_drop: False
+  deco_drop: False
+  maskrate: '0.1,0.0005,0.3'
+  recon_loss_lam: 0.01
+  cross_loss_lam: 0.01
+  within_loss_lam: 1
+  alpha: 4
+  mask_key: '0'
+  target_key: '0'
+  mlphidden: 0
+
+
+dblp:
+  weight_decay: 0.0001
+  device: 1
+  hidden_dim: 64
+  num_heads: 4
+  epoch: 300
+  num_layers: 4
+  lr: 0.01
+  use_norm: True
+  use_drop: False
+  deco_drop: False
+  maskrate: '0.3,0.0005,0.5'
+  recon_loss_lam: 0.01
+  cross_loss_lam: 1
+  within_loss_lam: 1
+  alpha: 6
+  mask_key: '1'
+  target_key: '0'
+  mlphidden: 1024
+
+imdb:
+  weight_decay: 0.0001
+  device: 2
+  hidden_dim: 64
+  num_heads: 4
+  epoch: 300
+  num_layers: 4
+  lr: 0.001
+  use_norm: True
+  use_drop: True
+  deco_drop: True
+  maskrate: '0.1,0.0005,0.4'
+  recon_loss_lam: 1
+  cross_loss_lam: 0.001
+  within_loss_lam: 1
+  alpha: 4
+  mask_key: '0'
+  target_key: '0'
+  mlphidden: 2048
+
+
+yelp:
+  weight_decay: 0.0001
+  device: 3
+  hidden_dim: 64
+  num_heads: 4
+  epoch: 250
+  num_layers: 4
+  lr: 0.01
+  use_norm: False
+  use_drop: True
+  deco_drop: False
+  maskrate: '0.1,0.0005,0.3'
+  recon_loss_lam: 0.01
+  cross_loss_lam: 0.01
+  within_loss_lam: 1
+  alpha: 4
+  mask_key: '0'
+  target_key: '0'
+  mlphidden: 0
